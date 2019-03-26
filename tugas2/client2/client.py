@@ -31,7 +31,6 @@ def getImage():
 while True:
     data, addr = sock.recvfrom(1024)
     if str(data).startswith("START"):
-        tmp = str(data).split()
-        # print "Got Size"
+        print "Got Size"
         getImage()
         break
